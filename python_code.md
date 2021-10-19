@@ -3,19 +3,19 @@
 
 ## The user should guess the secret word which is "baguette".
 
-s = "baguette"
-\ni = 0
-\na = input("Guess the word: ")
-\nsentinel = "-9"
-\nwhile s != a and i < 4 and a != sentinel:
-    \nif a != s:
-        \na = (input("Try another time: "))
-    \nif i < 4:
-        \nprint("You still have ", (3-i), "attempts.")
-    \ni = i + 1
-\nif a == s:
-    \nprint("CONGRATULATIONS!")
-\nelif a == sentinel:
-    \nprint("See you next time!")
-\nelif a != s:
-    \nprint("You have exceeded the number of attempts.")
+s = "baguette"  
+i = 0  
+a = input("Guess the word: ")  
+sentinel = "-9"  
+while s != a and i < 4 and a != sentinel:  
+    if a != s:  
+        a = (input("Try another time: "))  
+    if i < 4:  
+        print("You still have ", (3-i), "attempts.")  
+    i = i + 1  
+if a == s:  
+    print("CONGRATULATIONS!")  
+elif a == sentinel:  
+    print("See you next time!")  
+elif a != s:  
+    print("You have exceeded the number of attempts.")
